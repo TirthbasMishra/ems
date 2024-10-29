@@ -1,9 +1,11 @@
 
+
 const employees = [
    {
       "id": 1,
       "email": "employee1@example.com",
       "password": "123",
+      "firstName": "Ravi",
       "tasks": [
          {
             "active": true,
@@ -35,12 +37,19 @@ const employees = [
             "taskDate": "2024-10-28",
             "category": "Customer Service"
          }
-      ]
+      ],
+      "taskCounts": {
+         "active": 2,
+         "newTask": 1,
+         "completed": 1,
+         "failed": 0
+      }
    },
    {
       "id": 2,
       "email": "employee2@example.com",
       "password": "123",
+      "firstName": "Amit",
       "tasks": [
          {
             "active": true,
@@ -72,12 +81,19 @@ const employees = [
             "taskDate": "2024-10-28",
             "category": "Finance"
          }
-      ]
+      ],
+      "taskCounts": {
+         "active": 2,
+         "newTask": 1,
+         "completed": 1,
+         "failed": 0
+      }
    },
    {
       "id": 3,
       "email": "employee3@example.com",
       "password": "123",
+      "firstName": "Priya",
       "tasks": [
          {
             "active": true,
@@ -99,12 +115,19 @@ const employees = [
             "taskDate": "2024-10-25",
             "category": "Client Relations"
          }
-      ]
+      ],
+      "taskCounts": {
+         "active": 2,
+         "newTask": 1,
+         "completed": 0,
+         "failed": 0
+      }
    },
    {
       "id": 4,
       "email": "employee4@example.com",
       "password": "123",
+      "firstName": "Sunita",
       "tasks": [
          {
             "active": true,
@@ -126,12 +149,19 @@ const employees = [
             "taskDate": "2024-10-18",
             "category": "Development"
          }
-      ]
+      ],
+      "taskCounts": {
+         "active": 1,
+         "newTask": 1,
+         "completed": 1,
+         "failed": 0
+      }
    },
    {
       "id": 5,
       "email": "employee5@example.com",
       "password": "123",
+      "firstName": "Neha",
       "tasks": [
          {
             "active": true,
@@ -153,7 +183,13 @@ const employees = [
             "taskDate": "2024-10-23",
             "category": "Presentation"
          }
-      ]
+      ],
+      "taskCounts": {
+         "active": 1,
+         "newTask": 1,
+         "completed": 1,
+         "failed": 0
+      }
    }
 ];
 
@@ -161,9 +197,11 @@ const admin = [
    {
       "id": 1,
       "email": "admin@example.com",
-      "password": "123"
+      "password": "123",
+      "firstName": "Rajesh"
    }
 ];
+
 
 
 export const setLocalStorage = () =>{
