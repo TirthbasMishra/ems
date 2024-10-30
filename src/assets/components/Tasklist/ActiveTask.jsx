@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../../context/AuthProvider";
+import { AuthContext } from "../../../context/AuthProvider";
 
 const ActiveTask = ({ data, taskKey }) => {
   const [userData, setUserData] = useContext(AuthContext);
@@ -82,7 +82,7 @@ const ActiveTask = ({ data, taskKey }) => {
   };
 
   return (
-    <div className="flex-shrink-0 h-full w-[300px] p-5 bg-yellow-400 rounded-xl ">
+    <div className="flex-shrink-0 h-full w-[400px] p-5 bg-green-900 rounded-xl ">
       <div className="flex justify-between items-center">
         <h3 className="bg-blue-600 px-3 py-1 rounded text-sm">
           {data.category}
@@ -94,11 +94,11 @@ const ActiveTask = ({ data, taskKey }) => {
       <div className="flex justify-between mt-4">
         <button
           onClick={() => changeToCompleted(tasks, taskKey)}
-          className="bg-green-600 px-2 py-1 text-sm"
+          className="bg-green-600 px-2 py-1 text-medium rounded-md"
         >
           Mark as Completed
         </button>
-        <button onClick={() => changeToFailed(tasks, taskKey)} className="bg-red-600 px-2 py-1 text-sm">Mark as Failed</button>
+        <button onClick={() => changeToFailed(tasks, taskKey)} className="bg-red-600 px-2 py-1 text-medium rounded-md">Mark as Failed</button>
       </div>
     </div>
   );
