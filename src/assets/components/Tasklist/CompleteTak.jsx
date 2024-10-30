@@ -7,7 +7,7 @@ const CompleteTak = ({data}) => {
             <h3 className='bg-red-600 px-3 py-1 rounded text-sm'>
                 {data.category}
             </h3>
-            <h4 className='text-sm'>
+            <h4 className='text-sm font-semibold'>
                 {data.taskDate}
             </h4>
         </div>
@@ -17,8 +17,8 @@ const CompleteTak = ({data}) => {
         <p className='text-sm mt-4'>
             {data.taskDescription}
         </p>
-        <div className='mt-2'>
-            <button className='w-full bg-green-600 rounded-md font-medium py-1 px-2 text-xs'>Completed</button>
+        <div className='mt-6'>
+            <button className='w-full bg-green-600 rounded-md font-medium py-2 px-4 text-md'>Completed</button>
         </div>
     </div>
   )

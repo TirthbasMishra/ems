@@ -7,7 +7,7 @@ const ForwardedTask = ({data}) => {
                 <h3 className='bg-red-600 px-3 py-1 rounded text-sm'>
                     {data.category}
                 </h3>
-                <h4 className='text-sm'>
+                <h4 className='text-sm font-semibold'>
                     {data.taskDate}
                 </h4>
             </div>
@@ -17,8 +17,8 @@ const ForwardedTask = ({data}) => {
             <p className='text-sm mt-2'>
                 {data.taskDescription}
             </p>
-            <div className='mt-4'>
-                <div className='w-full bg-purple-600 rounded-md font-medium py-1 px-2 text-xs'>Forwarded To: {data.forwardedTo} </div>
+            <div className='mt-6'>
+                <div className='w-full bg-purple-600 rounded-md font-medium py-2 px-4 text-md'>Forwarded To: {data.forwardedTo} </div>
             </div>
         </div>
     )

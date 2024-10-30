@@ -144,20 +144,20 @@ const NewTask = ({ data, taskKey }) => {
         <h3 className="bg-red-600 px-3 py-1 rounded text-sm">
           {data.category}
         </h3>
-        <h4 className="text-sm">{data.taskDate}</h4>
+        <h4 className="text-sm font-semibold">{data.taskDate}</h4>
       </div>
       <h2 className="mt-5 text-2xl font-semibold">{data.taskTitle}</h2>
       <p className="text-sm mt-2">{data.taskDescription}</p>
       <div className="mt-4">
         <button
           onClick={() => taskAccepted(tasks, taskKey)}
-          className="w-full bg-emerald-500"
+          className="w-full bg-emerald-500 rounded-md font-medium py-2 px-4 text-md"
         >
           Accept Task
         </button>
       {data.forwardedBy?<div className="mt-2 w-full bg-puple-600"> Forwarded by: {data.forwardedBy}</div>: ''}      
       </div>
-      <div className="mt-2">
+      <div className="mt-4">
       <form 
           onSubmit={(e) => ForwardTask(e, tasks, taskKey)}
           className='flex flex-wrap w-full items-start justify-between'
@@ -173,7 +173,7 @@ const NewTask = ({ data, taskKey }) => {
           </div>
           <div className='w-1/2 flex flex-col items-start mt-4'>  
             <button
-            className="w-full bg-purple-600 rounded-md font-medium py-1 px-2 text-xs"
+            className="w-full bg-purple-600 rounded-md font-medium py-1 px-2 text-md"
             >
             Forward Task
             </button>
